@@ -9,7 +9,7 @@
 
 <title>{props.title}</title>
 
-<h1 class="text-4xl font-extrabold mb-5 text-center">{props.subtitle}</h1>
+<h1 class="text-4xl font-extrabold mb-5 text-center mt-5">{props.subtitle}</h1>
 
 <div class="flex justify-center">
 	<div class="w-4/5">
