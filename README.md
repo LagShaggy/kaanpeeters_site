@@ -1,38 +1,31 @@
-# create-svelte
-
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+kaanpeeters.com
+und
+kaanpeeters.ch
+– Homepage müsste auf Deutsch und Englisch eingestellt werden können
+– Habe ein Logo, das schön wäre integriert zu haben
+– Farbkombination viel schwarz und Rest rainbow, darf ruhig ein bisschen crazy
+aussehen
+– Müsste einfach zu updaten sein, auch dass ich einmal einen grösseren Teil
+hinzufügen könnte
+– Wäre gut, wenn die Seite trotzdem simpel gehaltet werden könnte, wie zum
+Beispiel hier https://pablolienhard.com/
+kaanpeeters.com
+Gegliedert in Bio, Bilder und nächste Events mit Links
+kaanpeeters.com/quartett EN: kaanpeeters.com/quartet
+Text über das Quartett
+Möglichkeit zu Bandcamp und Spotify etc. Verlinken
+Youtube-Link-Players, um gerade auf der Website Youtube-Videos anzuschauen
+Bilder der Bandmitglieder mit jeweiliger kleinen Bio
+evtl. eine Slideshow von Bildern
+kaanpeeters.com/impros
+Kurzer Text und Link zu impros.ch
+kaanpeeters.com/schriften EN: kaanpeeters.com/writings
+Verschiedene Texte
+Wäre schön, wenn sie so angeordnet wären, wie Vierecke eines Schachbretts, aber alle
+die gleiche Farbe, wenn man die Maus draufhält sieht man den Namen des Textes, bei
+Klick öffnet sich das PDF
+kaanpeeters.com/shop
+Möglichkeit auf Bandcamp und anderes zu linken
+kleiner Shop um hauptsächlich Dokumente zu verkaufen
+kaanpeeters.com/kontaktEN: kaanpeeters.com/contact
+Kontaktdaten
