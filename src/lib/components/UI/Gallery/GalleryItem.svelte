@@ -1,5 +1,5 @@
 <script lang="ts">
-	import mountain from 'img/mountains.jpeg';
+	import mountain from 'img/desert.jpg';
 	const text: string = 'This a a flavourful text for the image';
 
 	export let imageUrl: string;
@@ -17,18 +17,7 @@
 		'border-purple-300',
 		'border-orange-300'
 	];
-
-	const shadowCols: string[] = [
-		'shadow-red-300',
-		'shadow-yellow-300',
-		'shadow-lime-300',
-		'shadow-cyan-300',
-		'shadow-blue-300',
-		'shadow-purple-300',
-		'shadow-orange-300'
-	];
 	const colour = cols[randCol];
-	const shadowCol = shadowCols[randCol];
 	let isModal: boolean = false;
 
 	$: isModal;
@@ -41,18 +30,20 @@
 {#if isModal}
 	<div
 		on:click={toggleModal}
-		class="fixed bg-opacity-25 bg-gray-300 w-screen h-screen top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-10"
+		class="fixed bg-opacity-25 backdrop-blur bg-gray-300 w-screen h-screen top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-10"
 	>
 		<div class="fixed top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
-			<img src={mountain} />
+			<div class="">
+				<img src={mountain} class="w-full h-auto max-h-screen object-contain"/>
+			</div>
 		</div>
 	</div>
 {/if}
 
 <div
 	on:click={toggleModal}
-	class="relative w-max h-max border-4 {colour} hover:{shadowCol} hover:shadow-2xl w-96 h-96"
+	class="relative border-2 {colour} w-40 h-40 overflow-hidden rounded-xl"
 >
-	<img src={mountain} alt="" />
+	<img src={mountain} alt="" class="w-full h-full object-cover" />
 	<span class="absolute bottom-0 left-0 text-white">{text}</span>
 </div>

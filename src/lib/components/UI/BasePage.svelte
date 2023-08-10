@@ -7,12 +7,11 @@
 	export let props: BasePageProps;
 </script>
 
-<title>{props.title}</title>
+<title>{props.title}</title> 
 
-<h1 class="text-4xl font-extrabold mb-5 text-center mt-5">{props.subtitle}</h1>
-
-<div class="flex justify-center">
-	<div class="w-4/5">
+<div class="flex flex-wrap justify-center">
+	<h1 class="w-screen text-4xl font-extrabold text-left mt-5 ml-5">{props.subtitle}</h1>
+	<div class="w-screen m-5">
 		<slot />
 	</div>
 </div>
