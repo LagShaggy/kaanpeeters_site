@@ -2,6 +2,9 @@
 	import BasePage from '$lib/components/UI/BasePage.svelte';
 	import GalleryContainer from '$lib/components/UI/Gallery/GalleryContainer.svelte';
 	import GalleryItem from '$lib/components/UI/Gallery/GalleryItem.svelte';
+	import EventCompContainer from '$lib/components/UI/EventComp/EventCompContainer.svelte';
+	import EventCompItem from '$lib/components/UI/EventComp/EventCompItem.svelte';
+	
 	type BasePageProps = {
 		title: string;
 		subtitle: string;
@@ -30,9 +33,10 @@
 			perferendis. Id, aliquid. Aspernatur culpa quo fuga facere quibusdam doloribus dolorem blanditiis
 			corrupti repellendus! Necessitatibus error fuga molestiae alias a porro optio inventore expedita
 			assumenda! Obcaecati fugit necessitatibus doloremque tenetur dolorum dolor quia.	
+			
 		</div>
 		<div class="w-1/2 mb-5">
-			events go here
+			<EventCompContainer />
 		</div>
 		<GalleryContainer />
 	</div>
