@@ -13,5 +13,5 @@
     <li><strong>Twitter:</strong> <a href="https://twitter.com/johndoe">@johndoe</a></li>
   </ul>
     </div>
-    <img src={picture} alt="my beautif pic" class="w-1/3 mx-5">
+    <img src={picture} alt="my beautif pic" class="h-min sm:h-auto w-1/3 mx-0 sm:mx-5">
 </div>

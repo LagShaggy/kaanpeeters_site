@@ -9,17 +9,17 @@
 		subtitle: string;
 	};
 	const props: BasePageProps = {
-		title: 'Initial Page',
-		subtitle: 'Initial Page Subtitle'
+		title: 'Home',
+		subtitle: 'Home'
 	};
 </script>
 
 <BasePage {props}>
 	<div class="flex flex-col sm:flex-row flex-wrap">
-		<div class="w-1/2">
+		<div class="w-full sm:w-1/2">
 			<Biography />		
 		</div>
-		<div class="w-1/2">
+		<div class="w-full sm:w-1/2">
 			<EventCompContainer />
 		</div>
 		<div class="mt-5">

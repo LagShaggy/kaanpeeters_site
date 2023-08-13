@@ -7,10 +7,10 @@
 	export let props: PageProps;
 </script>
 
-<div class="mb-1">
-	<a href={props.route}>
-		<div class="bg-slate-500 border border-black">
+<a href={props.route} class="flex items-center w-full bg-slate-500 hover:bg-slate-300">
+	<div class="flex-grow">
+		<div class="w-auto h-full text-center">
 			{props.name}
 		</div>
-	</a>
-</div>
+	</div>
+</a>
