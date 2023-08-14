@@ -2,9 +2,9 @@
 	import mountain from 'img/desert.jpg';
 	const text: string = 'This a a flavourful text for the image';
 
-	export let imageUrl: string;
-	export let altText: string;
-	export let flavourText: string;
+	let imageUrl: string;
+	let altText: string;
+	let flavourText: string;
 
 	// random colour logic
 	const randCol = Math.floor(Math.random() * 6);
@@ -36,7 +36,7 @@
 	>
 		<div class="fixed top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
 			<div class="">
-				<img src={mountain} class="w-full h-auto max-h-screen object-contain"/>
+				<img src={mountain} class="w-full h-auto max-h-screen object-contain" />
 			</div>
 		</div>
 	</div>
