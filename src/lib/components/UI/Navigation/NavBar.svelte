@@ -20,12 +20,12 @@
 			route: '/writings'
 		},
 		{
-			name: 'Shop',
-			route: '/shop'
+			name: 'Gallery',
+			route: '/gallery'
 		},
 		{
-			name: 'Contacts',
-			route: '/contact'
+			name: 'Shop',
+			route: '/shop'
 		}
 	];
 

@@ -1,15 +1,18 @@
 <script lang="ts">
 	import BasePage from '$lib/components/UI/BasePage.svelte';
+	import GalleryContainer from '$lib/components/UI/Gallery/GalleryContainer.svelte';
 	
 	type BasePageProps = {
 		title: string;
 		subtitle: string;
 	};
 	const props: BasePageProps = {
-		title: 'Contacts',
-		subtitle: 'Contacts'
+		title: 'Gallery',
+		subtitle: 'Gallery'
 	};
 </script>
 
-<BasePage {props}/>
+<BasePage {props}>
+	<GalleryContainer />
+</BasePage>
 
