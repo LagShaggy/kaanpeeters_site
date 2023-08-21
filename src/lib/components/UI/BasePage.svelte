@@ -6,7 +6,9 @@
 </script>
 
 <script lang="ts">
-	import NavBar from './NavBar/NavBar.svelte';
+	import { page } from '$app/stores';
+
+	import NavBar from './Navigation/NavBar.svelte';
 
 	export let props: BasePageProps;
 </script>

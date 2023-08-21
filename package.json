@@ -3,6 +3,8 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "vite dev",
+		"types": "bash ./scripts/generate.types.sh",
+		"login": "bash ./scripts/supabaseLogin.sh",
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",

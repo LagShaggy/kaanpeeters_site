@@ -29,8 +29,6 @@
 			route: '/shop'
 		}
 	];
-
-	export let currentLang: boolean = true; //true = german, false = english
 </script>
 
 <div class="w-screen w-max-screen h-auto flex flex-col sm:flex-row flex-grow gap-2 sm:gap-0">
@@ -38,7 +36,6 @@
 	{#each tabs as props}
 		<Tab {props} />
 	{/each}
-	<!-- svelte-ignore a11y-no-static-element-interactions -->
 	<div class="flex items-center w-full bg-slate-500 justify-center">
 		<div class="w-auto h-auto justify-center mx-2">
 			<div class="flex">

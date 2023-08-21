@@ -3,6 +3,7 @@
 	import EventContainer from '$lib/components/UI/Event/EventContainer.svelte';
 	import Biography from '$lib/components/UI/Biography.svelte';
 	import type { PageData } from './$types';
+	import Toggle from '$lib/components/UI/Elements/Toggle.svelte';
 
 	export let data: PageData;
 
