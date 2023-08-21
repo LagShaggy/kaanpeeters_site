@@ -1,5 +1,12 @@
-// since there's no dynamic data here, we can prerender
-// it so that it gets served as a static asset in production
-export const prerender = false;
-export const ssr = false;
+import { redirect } from '@sveltejs/kit';
+import type { PageLoad } from './$types';
+
 export const csr = true;
+
+export const load: PageLoad = ({ params }) => {
+	params;
+	if (!params) {
+		throw redirect(301, '/de/');
+	}
+	return {};
+};
