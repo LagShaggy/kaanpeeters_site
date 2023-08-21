@@ -13,12 +13,17 @@
 
 <title>{props.title}</title> 
 
-<div class="w-screen">
-	<NavBar />
-</div>
-<div class="flex flex-wrap justify-center flex-grow">
-	<h1 class="w-screen text-4xl font-extrabold text-left mt-5 ml-5">{props.subtitle}</h1>
-	<div class="w-screen m-5">
-		<slot />
+<div class="min-h-screen">
+	<div class="w-screen">
+		<NavBar />
+	</div>
+	<div class="flex flex-wrap">
+		<h1 class="w-screen text-4xl font-extrabold text-left mt-5 mx-5">{props.subtitle}</h1>
+		<div class="w-screen m-5">
+			<slot />
+		</div>
+		<div class="">
+			some footer text
+		</div>
 	</div>
 </div>

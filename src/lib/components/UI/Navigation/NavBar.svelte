@@ -41,7 +41,7 @@
 	{/each}
 	<!-- svelte-ignore a11y-no-static-element-interactions -->
 	<div class="flex items-center w-full bg-slate-500 justify-center">
-		<div class="w-auto h-auto justify-center">
+		<div class="w-auto h-auto justify-center mx-2">
 			<div class="flex">
 				<!-- svelte-ignore a11y-click-events-have-key-events -->
 				<div class="mr-2 cursor-pointer hover:bg-slate-300" on:click={() => currentLang = false}>English</div>
