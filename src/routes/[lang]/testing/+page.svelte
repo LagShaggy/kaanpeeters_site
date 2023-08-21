@@ -16,7 +16,7 @@
 
 <BasePage {props}>
 	{#each data.events as event}
-		{event.name}<br />
+		{event.name} {event.date} {event.time} {event.description}<br />
 	{/each}
 	<EventContainer />
 </BasePage>

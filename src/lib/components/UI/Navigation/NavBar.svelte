@@ -31,8 +31,10 @@
 	];
 </script>
 
-<div class="w-screen w-max-screen h-auto flex flex-col sm:flex-row flex-grow gap-2 sm:gap-0">
-	<img src={logo} alt="logo-pic" class="h-40 w-40 sm:h-20 sm:w-auto" />
+<div
+	class="w-screen w-max-screen h-auto flex flex-col sm:flex-row flex-grow gap-2 sm:gap-0 bg-gradient-to-t from-black to-gray-800"
+>
+	<img src={logo} alt="logo-pic" class="h-40 w-40 sm:h-20 sm:w-auto rounded-br-xl" />
 	{#each tabs as props}
 		<Tab {props} />
 	{/each}
