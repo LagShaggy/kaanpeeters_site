@@ -1,5 +1,6 @@
 <script lang="ts">
 	import BasePage from '$lib/components/UI/BasePage.svelte';
+	import Quartet from '$lib/components/Quartet.svelte';
 
 	type BasePageProps = {
 		title: string;
@@ -12,7 +13,9 @@
 
 </script>
 
-<BasePage {props}/>
+<BasePage {props}>
+	<Quartet />
+</BasePage>
 
 
 

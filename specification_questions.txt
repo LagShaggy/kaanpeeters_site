@@ -1,0 +1,49 @@
+-Each word in nav to be rainbow gradient
+-move gallery to it's own page
+-if no upcoming events place a placeholder
+-remove contacts from nav (info will go in bio)
+-toggle lang button - change color every time it's clicked
+-impros - logo that leads to another page - possibly with a short desc.
+-writings- rand. order, clicking opens full text with link to download pdf below, options of adding and removing
+-shop-we're not goona do it yet, but add sticker "in progress"
+-add weird easter eggs
+	-random ghost that flies across the page / behind nav bar elements, runs off ih hovered over
+
+
+
+Sub. Questions:
+-priority events?
+-quarter - slideshow of members?
+
+
+Focus on:
+2)component to return random color (typescript component?)
+3)animation for navbar to cycle colors like vercel.com
+4)navbar change to include more colors
+
+How do you want colors to be placed over the website?
+
+Under HOME
+	Do you have any prefrence/idea on how do you wanna have elements placed?
+	
+Under QUARTET
+	Do you have any prefrence/idea on how do you wanna have elements placed?
+	Do you want options to change content? Like link different youtube videos, change slideshow, change band members bio?
+	
+Under IMPROS
+	Do you have any prefrence/idea on how do you wanna have elements placed?
+	Do you want options to change content?
+	
+Under WRITINGS
+	Do you have any prefrence/idea on how do you wanna have elements placed?
+	I'm guessing a list of songs?
+	Option of adding more?
+	
+Under SHOP
+	Do you have any prefrence/idea on how do you wanna have elements placed?
+	Do you want options to change content?
+	Is it going to be just links to other shops, or an actual shop?
+	
+Under contact
+	Do you have any prefrence/idea on how do you wanna have elements placed?
+	Do you wanna move this to bottom of every page instead?

@@ -3,7 +3,7 @@
 </script>
 
 <div class="flex flex-wrap overflow-auto gap-0.5">
-	{#each Array(30) as _, index (index)}
+	{#each Array(70) as _, index (index)}
 		<GalleryItem />
 	{/each}
 </div>
