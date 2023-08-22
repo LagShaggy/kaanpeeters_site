@@ -1,12 +1,12 @@
 <script lang="ts">
-	import BasePage from '$lib/components/UI/BasePage.svelte';
-	import EventContainer from '$lib/components/UI/EventComp/EventContainer.svelte';
+	import BasePage, { type BasePageProps } from '$lib/components/UI/BasePage.svelte';
+	import EventContainer from '$lib/components/UI/Event/EventContainer.svelte';
 	import Biography from '$lib/components/UI/Biography.svelte';
+	import type { PageData } from './$types';
+	import Toggle from '$lib/components/UI/Elements/Toggle.svelte';
 
-	type BasePageProps = {
-		title: string;
-		subtitle: string;
-	};
+	export let data: PageData;
+
 	const props: BasePageProps = {
 		title: 'Home',
 		subtitle: 'Home'

@@ -1,17 +1,19 @@
-<script lang="ts">
-	import NavBar from "./Navigation/NavBar.svelte";
-	
-	
-	type BasePageProps = {
+<script context="module" lang="ts">
+	export type BasePageProps = {
 		title: string;
 		subtitle: string;
 	};
-
-	export let props: BasePageProps;
-
 </script>
 
-<title>{props.title}</title> 
+<script lang="ts">
+	import { page } from '$app/stores';
+
+	import NavBar from './Navigation/NavBar.svelte';
+
+	export let props: BasePageProps;
+</script>
+
+<title>{props.title}</title>
 
 <div class="min-h-screen">
 	<div class="w-screen">
@@ -22,8 +24,6 @@
 		<div class="w-screen m-5">
 			<slot />
 		</div>
-		<div class="">
-			some footer text
-		</div>
+		<div class="">some footer text</div>
 	</div>
 </div>
