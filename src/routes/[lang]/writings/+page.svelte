@@ -1,7 +1,14 @@
 <script lang="ts">
-	import BasePage from '$lib/components/UI/BasePage.svelte';
+	import { basePageStore } from '$lib/components/UI/BasePage/basePageStore';
 	import WritingContainer from '$lib/components/UI/Writings/WritingContainer.svelte';
 	import type { PageData } from './$types';
+
+	basePageStore.update((n) => {
+		return {
+			...n,
+			subtitle: 'Writings'
+		};
+	});
 
 	export let data: PageData;
 

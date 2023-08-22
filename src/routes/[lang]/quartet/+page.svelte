@@ -1,22 +1,14 @@
 <script lang="ts">
-	import BasePage from '$lib/components/UI/BasePage.svelte';
-	import Quartet from '$lib/components/Quartet.svelte';
+	import Quartet from '$lib/components/UI/Templates/Quartet.svelte';
+	import { basePageStore } from '$lib/components/UI/BasePage/basePageStore';
+	import { get } from 'svelte/store';
 
-	type BasePageProps = {
-		title: string;
-		subtitle: string;
-	};
-	const props: BasePageProps = {
-		title: 'Quartet',
-		subtitle: 'Quartet'
-	};
-
+	basePageStore.update((n) => {
+		return {
+			...n,
+			subtitle: 'Quartet'
+		};
+	});
 </script>
 
-<BasePage {props}>
-	<Quartet />
-</BasePage>
-
-
-
-
+<Quartet />

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { language } from '$lib/components/Language/language';
-	import Rainbow from '../rainbow.svelte';
+	import Rainbow from '../Styling/rainbow.svelte';
 
 	type PageProps = {
 		name: string;
@@ -10,10 +10,7 @@
 	export let props: PageProps;
 </script>
 
-<a
-	href={`${$language}${props.route}`}
-	class="flex items-center w-full bg-slate-500 hover:bg-slate-300"
->
+<a href={`${$language}${props.route}`} class="flex items-center w-full hover:bg-gray-900">
 	<div class="flex-grow">
 		<div class="w-auto h-full text-center font-extrabold">
 			<Rainbow>
