@@ -21,4 +21,8 @@
 	}
 </script>
 
-<Toggle bind:on={state} on:click={() => languageReroute(selectedLanguage)} />
+<div class="flex flex-row justify-between">
+	<div>German</div>
+	<Toggle bind:on={state} on:click={() => languageReroute(selectedLanguage)} />
+	<div>English</div>
+</div>

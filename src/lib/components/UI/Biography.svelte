@@ -9,12 +9,15 @@
 
 <div class="flex flex-row">
 	<div class="w-full">
-		<p><strong>{$t['home.kaanpeeters']}</strong></p>
+		<p class="font-text"><strong>{$t['home.kaanpeeters']}</strong></p>
 		<p>
 			<strong>{$t['home.slogan']}</strong><br />
 			<br />
+		</p>
+		<p class="font-title font-bold text-2xl">
 			{$t['home.text']}
 		</p>
+
 		<div class="flex flex-row flex-grow gap-2 my-2">
 			<a href="https://www.instagram.com/kaanpeeters/" target="_blank">
 				<img src={instagramPic} alt="My Instagram page" class="h-20" />
@@ -27,9 +30,5 @@
 			</a>
 		</div>
 	</div>
-	<img
-		src={bioPicture}
-		alt="Kaan bio picture"
-		class="h-min sm:h-auto w-1/3 mx-0 sm:mx-5 rounded-xl"
-	/>
+	<img src={bioPicture} alt="Kaan bio" class="h-min sm:h-auto w-1/3 mx-0 sm:mx-5 rounded-xl" />
 </div>

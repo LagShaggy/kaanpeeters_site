@@ -28,5 +28,3 @@ export const t = derived(language, ($language) => {
 export const languageReroute = (lang: Language) => {
 	goto(lang + '/' + get(page).route.id?.split('/').slice(2).join('/'));
 };
-
-goto('/impros');

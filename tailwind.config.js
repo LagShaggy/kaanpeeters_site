@@ -2,7 +2,12 @@
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
-		extend: {}
+		fontFamily: {
+			title: ['"Bricolage Grotesque"', 'sans-serif'],
+			text: [],
+			navBar: ['Tilt Prism', 'cursive'],
+			poem: []
+		}
 	},
 	plugins: []
 };

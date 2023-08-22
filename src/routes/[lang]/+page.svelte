@@ -4,6 +4,7 @@
 	import Biography from '$lib/components/UI/Biography.svelte';
 	import type { PageData } from './$types';
 	import Toggle from '$lib/components/UI/Elements/Toggle.svelte';
+	import { page } from '$app/stores';
 
 	export let data: PageData;
 
@@ -11,6 +12,8 @@
 		title: 'Home',
 		subtitle: 'Home'
 	};
+
+	console.log($page.params.lang);
 </script>
 
 <BasePage {props}>
