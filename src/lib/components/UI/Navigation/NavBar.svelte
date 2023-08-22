@@ -31,14 +31,12 @@
 	];
 </script>
 
-<div
-	class="w-screen w-max-screen h-auto flex flex-col sm:flex-row flex-grow gap-2 sm:gap-0 bg-gradient-to-t from-black to-gray-800"
->
-	<img src={logo} alt="logo-pic" class="h-40 w-40 sm:h-20 sm:w-auto rounded-br-xl" />
+<div class="w-screen w-max-screen h-auto flex flex-col sm:flex-row flex-grow gap-2 sm:gap-0">
+	<img src={logo} alt="logo-pic" class="h-40 w-40 sm:h-20 sm:w-auto" />
 	{#each tabs as props}
 		<Tab {props} />
 	{/each}
-	<div class="flex items-center w-full bg-slate-500 justify-center">
+	<div class="flex items-center w-full justify-center">
 		<div class="w-auto h-auto justify-center mx-2">
 			<div class="flex">
 				<LanguageToggle />
