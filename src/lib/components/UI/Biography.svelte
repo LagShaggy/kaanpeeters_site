@@ -3,6 +3,7 @@
 	import instagramPic from 'img/core/logo_instagram.png';
 	import youtubePic from 'img/core/logo_youtube.png';
 	import bandcampPic from 'img/core/logo_bandcamp.png';
+	import Text from './Elements/Text.svelte';
 
 	import { t } from '../Language/language';
 </script>
@@ -14,9 +15,9 @@
 			<strong>{$t['home.slogan']}</strong><br />
 			<br />
 		</p>
-		<p class="font-title font-bold text-2xl">
+		<Text>
 			{$t['home.text']}
-		</p>
+		</Text>
 
 		<div class="flex flex-row flex-grow gap-2 my-2">
 			<a href="https://www.instagram.com/kaanpeeters/" target="_blank">

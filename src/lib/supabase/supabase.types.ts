@@ -33,6 +33,27 @@ export interface Database {
         }
         Relationships: []
       }
+      writings: {
+        Row: {
+          id: number
+          name: string | null
+          pdfid: string | null
+          text: string | null
+        }
+        Insert: {
+          id?: number
+          name?: string | null
+          pdfid?: string | null
+          text?: string | null
+        }
+        Update: {
+          id?: number
+          name?: string | null
+          pdfid?: string | null
+          text?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

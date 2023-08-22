@@ -1,6 +1,8 @@
 <script lang="ts">
+	import { language } from '$lib/components/Language/language.js';
 	import BasePage from '$lib/components/UI/BasePage.svelte';
 	import EventContainer from '$lib/components/UI/Event/EventContainer.svelte';
+	import { writable } from 'svelte/store';
 
 	type BasePageProps = {
 		title: string;
