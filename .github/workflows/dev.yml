@@ -13,6 +13,7 @@ on:
 
 run-name: Deploy to Host by @${{ github.actor }}
 jobs:
+  runs-on: ubuntu-latest
   build-app:
     steps:
       - name: Checkout code
