@@ -9,7 +9,12 @@
 	import { t } from '../../Language/language';
 </script>
 
-<div class="flex flex-row">
+<div class="flex flex-col sm:flex-row">
+	<img
+		src={bioPicture}
+		alt="Kaan bio"
+		class="h-min sm:h-auto sm:w-1/3 mx-0 sm:mx-5 rounded-xl mb-5"
+	/>
 	<div class="w-full">
 		<Subheading>
 			{$t['home.kaanpeeters']}<br />
@@ -19,7 +24,7 @@
 			{$t['home.text']}
 		</Text>
 
-		<div class="flex flex-row flex-grow gap-2 my-2">
+		<div class="flex flex-row gap-2 m-2 justify-evenly">
 			<a href="https://www.instagram.com/kaanpeeters/" target="_blank">
 				<img src={instagramPic} alt="My Instagram page" class="h-20" />
 			</a>
@@ -31,5 +36,4 @@
 			</a>
 		</div>
 	</div>
-	<img src={bioPicture} alt="Kaan bio" class="h-min sm:h-auto w-1/3 mx-0 sm:mx-5 rounded-xl" />
 </div>

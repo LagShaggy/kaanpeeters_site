@@ -13,14 +13,14 @@
 		};
 	});
 
-	console.log($page.params.lang);
+	//console.log($page.params.lang);
 </script>
 
 <div class="flex flex-col sm:flex-row flex-wrap">
-	<div class="w-full sm:w-1/2">
+	<div class="w-full sm:w-2/3">
 		<Biography />
 	</div>
-	<div class="w-full sm:w-1/2">
+	<div class="w-full sm:w-1/3">
 		<EventContainer />
 	</div>
 </div>

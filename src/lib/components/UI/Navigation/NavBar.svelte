@@ -1,6 +1,5 @@
 <script lang="ts">
 	import LanguageToggle from '$lib/components/Language/LanguageToggle.svelte';
-	import Text from '../Elements/Text.svelte';
 	import Tab from './Tab.svelte';
 	import logo from 'img/core/kaan_logo.png';
 
@@ -33,8 +32,8 @@
 </script>
 
 <div class="flex flex-col sm:flex-row w-screen">
-	<div class="flex flex-row w-screen">
-		<div class="justify-center">
+	<div class="flex flex-row w-screen mt-2 sm:m-0">
+		<div class="justify-center m-2">
 			<img src={logo} alt="logo-pic" class="h-60 w-auto sm:h-20" />
 		</div>
 		<div class="flex flex-col sm:flex-row flex-grow gap-2 sm:gap-0">

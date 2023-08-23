@@ -7,7 +7,7 @@
 
 <title>{$basePageStore.title}</title>
 
-<div class="min-h-screen bg-gradient-to-b from-black to-gray-900">
+<div class="min-h-screen bg-gradient-to-b from-black to-gray-900 w-screen">
 	<div class="w-screen">
 		<NavBar />
 	</div>
