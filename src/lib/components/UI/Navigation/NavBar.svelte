@@ -1,7 +1,8 @@
 <script lang="ts">
 	import LanguageToggle from '$lib/components/Language/LanguageToggle.svelte';
+	import Text from '../Elements/Text.svelte';
 	import Tab from './Tab.svelte';
-	import logo from 'img/elemental_army.png';
+	import logo from 'img/core/kaan_logo.png';
 
 	const tabs = [
 		{
@@ -31,16 +32,18 @@
 	];
 </script>
 
-<div class="w-screen w-max-screen h-auto flex flex-col sm:flex-row flex-grow gap-2 sm:gap-0">
-	<img src={logo} alt="logo-pic" class="h-40 w-40 sm:h-20 sm:w-auto" />
-	{#each tabs as props}
-		<Tab {props} />
-	{/each}
-	<div class="flex items-center w-full justify-center">
-		<div class="w-auto h-auto justify-center mx-2">
-			<div class="flex">
-				<LanguageToggle />
-			</div>
+<div class="flex flex-col sm:flex-row w-screen">
+	<div class="flex flex-row w-screen">
+		<div class="justify-center">
+			<img src={logo} alt="logo-pic" class="h-60 w-auto sm:h-20" />
 		</div>
+		<div class="flex flex-col sm:flex-row flex-grow gap-2 sm:gap-0">
+			{#each tabs as props}
+				<Tab {props} />
+			{/each}
+		</div>
+	</div>
+	<div class="flex w-auto h-auto justify-center items-center">
+		<LanguageToggle />
 	</div>
 </div>
