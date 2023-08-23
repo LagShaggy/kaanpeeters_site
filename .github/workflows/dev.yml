@@ -32,9 +32,9 @@ jobs:
 
       - name: Build SvelteKit App with Static Adapter
         run: npm run build
-
-  web-deploy:
+  deploy:
     name: 🎉 Deploy via FTP
+    runs-on: ubuntu-latest
     uses: SamKirkland/FTP-Deploy-Action@v4.3.4
     with:
       server: ${{ secrets.METANET_SERVER }}
