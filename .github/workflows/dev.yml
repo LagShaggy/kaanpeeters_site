@@ -13,8 +13,8 @@ on:
 
 run-name: Deploy to Host by @${{ github.actor }}
 jobs:
-  runs-on: ubuntu-latest
   build-app:
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
