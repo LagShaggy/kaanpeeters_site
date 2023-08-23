@@ -33,12 +33,14 @@ jobs:
       - name: Build SvelteKit App with Static Adapter
         run: npm run build
   deploy:
-    name: 🎉 Deploy via FTP
     runs-on: ubuntu-latest
-    uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-    with:
-      server: ${{ secrets.METANET_SERVER }}
-      username: ${{ secrets.METANET_LOGIN }}
-      password: ${{ secrets.METANET_PASSWORD }}
-      server-dir: $METANET_FOLDER_DEV
-      local-dir: build/ #
+    needs: build-app
+    steps:
+      - name: 🎉 Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.METANET_SERVER }}
+          username: ${{ secrets.METANET_LOGIN }}
+          password: ${{ secrets.METANET_PASSWORD }}
+          server-dir: ${{ env.METANET_FOLDER_DEV }}
+          local-dir: build/
