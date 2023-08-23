@@ -1,10 +1,8 @@
 <script lang="ts">
 	import EventContainer from '$lib/components/UI/Event/EventContainer.svelte';
 	import Biography from '$lib/components/UI/Templates/Biography.svelte';
-	import type { PageData } from './$types';
-	import Toggle from '$lib/components/UI/Elements/Toggle.svelte';
-	import { page } from '$app/stores';
 	import { basePageStore } from '$lib/components/UI/BasePage/basePageStore';
+	import type { PageData } from './$types';
 
 	basePageStore.update((n) => {
 		return {
@@ -12,6 +10,9 @@
 			subtitle: 'Home'
 		};
 	});
+
+	export let data: PageData;
+	const events = data.events ?? [];
 
 	//console.log($page.params.lang);
 </script>
@@ -21,6 +22,6 @@
 		<Biography />
 	</div>
 	<div class="w-full sm:w-1/3">
-		<EventContainer />
+		<EventContainer {events} />
 	</div>
 </div>

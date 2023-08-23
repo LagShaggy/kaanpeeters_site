@@ -1,39 +1,33 @@
 <script lang="ts">
-    import expand from 'img/page_expand.png';
+	import expand from 'img/page_expand.png';
+	import type { Event } from '$lib/types';
 
-    export let event = {
-        eventName: "name placeholder",
-        eventDate: "7.8.2029.",
-        eventTime: "",
-        eventText: "text placeholder",
-    };
+	export let event: Event;
 
-    export let isPriority: boolean = true;
+	function formatDateTime(dateStr: string, timeStr: string): string {
+		const [year, month, day] = dateStr.split('-');
+		const [hour, minute, second] = timeStr.split(':');
+
+		const formattedDate = `${parseInt(day, 10)}.${parseInt(month, 10)}.${year}.`;
+		const formattedTime = `${hour}:${minute}`;
+
+		return `${formattedDate} ${formattedTime}`;
+	}
+	const datetime = formatDateTime(event.date, event.time);
+
+	//console.log(datetime);
 </script>
 
-<div class="relative flex flex-col bg-orange-200 rounded-xl">
-    <div class="flex flex-row mx-2 mt-1 border-b border-gray-500 border-opacity-50">
-        <div class="w-full font-bold">
-            {event.eventName}
-        </div>
-        <div class="w-auto text-right font-semibold">
-            {event.eventDate}
-        </div>
-    </div>
-    {#if isPriority}
-        <div class="w-auto mx-2 mb-1">
-            {event.eventText}
-        </div>
-    {:else}
-        <div class="max-h-24 overflow-hidden w-auto mx-2 mb-1 text-transparent bg-clip-text bg-gradient-to-b from-black to-transparent">
-            {event.eventText}
-        </div>
-    {/if}
-    <div class="absolute bottom-0 right-2">
-        <button class="h-5 w-5 hover:bg-neutral-400 rounded">
-            <img src={expand} alt="Expand" class="h-full w-full">
-        </button>
-    </div>
+<div class="flex flex-col bg-orange-200 rounded-xl">
+	<div class="flex flex-row mx-2 mt-1 border-b border-gray-500 border-opacity-50">
+		<div class="text-left font-bold">
+			{event.name}
+		</div>
+		<div class="ml-auto text-right font-semibold">
+			{datetime}
+		</div>
+	</div>
+	<div class="w-auto mx-2 mb-1">
+		{event.description}
+	</div>
 </div>
-
-
