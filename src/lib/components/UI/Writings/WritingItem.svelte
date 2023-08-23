@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Writing } from '$lib/types';
+	import Text from '../Elements/Text.svelte';
 
 	export let writing: Writing;
 
@@ -18,10 +19,12 @@
 	on:click={toggleShow}
 >
 	{#if !show}
-		<p>{writing.name}</p>
+		<Text>
+			{writing.name}
+		</Text>
 	{:else}
-		<p>
+		<Text>
 			{writing.text}
-		</p>
+		</Text>
 	{/if}
 </button>

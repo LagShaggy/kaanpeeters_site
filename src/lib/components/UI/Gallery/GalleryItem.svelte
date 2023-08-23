@@ -1,6 +1,6 @@
 <script lang="ts">
-	import mountain from 'img/desert.jpg';
-	const text: string = 'This a a flavourful text for the image';
+	import mountain from 'img/mountains.jpeg';
+	const text: string = '';
 
 	let imageUrl: string;
 	let altText: string;
@@ -46,7 +46,7 @@
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <div
 	on:click={toggleModal}
-	class="relative border-2 {colour} w-20 h-20 sm:w-40 sm:h-40 overflow-hidden rounded-xl"
+	class="relative border-2 {colour} w-1/5 flex-grow h-20 sm:w-40 sm:h-40 overflow-hidden rounded-xl"
 >
 	<img src={mountain} alt="" class="w-full h-full object-cover" />
 	<span class="absolute bottom-0 left-0 text-white">{text}</span>
