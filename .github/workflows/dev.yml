@@ -5,40 +5,40 @@ env:
 
 on:
   push:
-    branches: 
+    branches:
       - dev
   pull_request:
     types:
-      - merged  
+      - merged
 
 run-name: Deploy to Host by @${{ github.actor }}
 jobs:
   build-app:
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '18'
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
 
-    - name: Install dependencies
-      run: npm install
-    #
-    #- name: Install types
-    #  run: npm run supabaseLogin
-    #  run: npm run types
+      - name: Install dependencies
+        run: npm install
+      #
+      #- name: Install types
+      #  run: npm run supabaseLogin
+      #  run: npm run types
 
-    - name: Build SvelteKit App with Static Adapter
-      run: npm run build
-      
+      - name: Build SvelteKit App with Static Adapter
+        run: npm run build
+
   web-deploy:
-     name: 🎉 Deploy via FTP
-     uses: SamKirkland/FTP-Deploy-Action@4.3.4
-      with:
-        server: ${{ secrets.METANET_SERVER }}
-        username: ${{ secrets.METANET_LOGIN }}
-        password: ${{ secrets.METANET_PASSWORD }}
-        server-dir: $METANET_FOLDER_DEV
-        local-dir: build/ #
+    name: 🎉 Deploy via FTP
+    uses: SamKirkland/FTP-Deploy-Action@4.3.4
+    with:
+      server: ${{ secrets.METANET_SERVER }}
+      username: ${{ secrets.METANET_LOGIN }}
+      password: ${{ secrets.METANET_PASSWORD }}
+      server-dir: $METANET_FOLDER_DEV
+      local-dir: build/ #
