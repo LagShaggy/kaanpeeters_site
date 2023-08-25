@@ -3,6 +3,8 @@
 	import Toggle from '../UI/Elements/Toggle.svelte';
 	import english from '$assets/flags/english.png';
 	import german from '$assets/flags/german.png';
+	import { slide, fade, scale, fly } from 'svelte/transition';
+	import { quintOut } from 'svelte/easing';
 
 	let state: boolean;
 	let selectedLanguage: Language;
@@ -19,11 +21,23 @@
 	$: {
 		state;
 		selectedLanguage = state ? Language.English : Language.German;
-		flag = state ? english : german;
+		flag = state ? german : english;
 	}
 </script>
 
 <div class="flex flex-row justify-between items-center gap-3">
 	<Toggle bind:on={state} on:click={() => languageReroute(selectedLanguage)} />
-	<img src={flag} alt="flag" class="h-10 w-auto" />
+	<div>
+		<div class="grid place-items-center">
+			{#key flag}
+				<img
+					in:fade={{ duration: 400 }}
+					out:fade={{ duration: 400 }}
+					src={flag}
+					alt="flag"
+					class="h-10 w-auto relative row-span-full col-span-full"
+				/>
+			{/key}
+		</div>
+	</div>
 </div>
