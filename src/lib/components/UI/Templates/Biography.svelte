@@ -1,12 +1,12 @@
 <script lang="ts">
-	import bioPicture from 'img/Kaan_Peeters.jpg';
-	import instagramPic from 'img/core/logo_instagram.png';
-	import youtubePic from 'img/core/logo_youtube.png';
-	import bandcampPic from 'img/core/logo_bandcamp.png';
+	import bioPicture from '$assets/Kaan_Peeters.jpg';
+	import instagramPic from '$assets/core/logo_instagram.png';
+	import youtubePic from '$assets/core/logo_youtube.png';
+	import bandcampPic from '$assets/core/logo_bandcamp.png';
 	import Subheading from '../Elements/Subheading.svelte';
 	import Text from '../Elements/Text.svelte';
 
-	import { t } from '../../Language/language';
+	import { t } from '$lib/components/Language/language';
 </script>
 
 <div class="flex flex-col sm:flex-row">

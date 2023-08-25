@@ -1,5 +1,5 @@
 <script lang="ts">
-	import mountain from 'img/mountains.jpeg';
+	import mountain from '$lib/assets/mountains.jpeg';
 	const text: string = '';
 
 	let imageUrl: string;

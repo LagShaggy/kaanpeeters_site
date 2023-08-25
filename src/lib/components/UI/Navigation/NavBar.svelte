@@ -2,13 +2,13 @@
 	import LanguageToggle from '$lib/components/Language/LanguageToggle.svelte';
 	import { language } from '$lib/components/Language/language';
 	import Tab from './Tab.svelte';
-	import logo from 'img/core/kaan_logo.png';
 
 	const tabs = [
+		/*
 		{
 			name: 'Home',
 			route: '/'
-		},
+		},*/
 		{
 			name: 'Quartet',
 			route: '/quartet'
@@ -36,7 +36,7 @@
 	<div class="flex flex-row w-screen mt-2 sm:m-0">
 		<div class="justify-center m-2">
 			<a href={$language}>
-				<img src={logo} alt="logo-pic" class="h-60 w-auto sm:h-20" />
+				<img src="/favicon.png" alt="logo-pic" class="h-60 w-auto sm:h-20" />
 			</a>
 		</div>
 		<div class="flex flex-col sm:flex-row flex-grow gap-2 sm:gap-0">

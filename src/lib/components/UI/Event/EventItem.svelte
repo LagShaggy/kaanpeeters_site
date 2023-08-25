@@ -1,5 +1,4 @@
 <script lang="ts">
-	import expand from 'img/page_expand.png';
 	import type { Event } from '$lib/types';
 
 	export let event: Event;

@@ -25,10 +25,9 @@ const config = {
 			entries: ['/en/impros', '/de/impros', '/en/quartet', '/de/quartet']
 		},
 		alias: {
-			img: 'src/lib/images/*',
+			$assets: 'src/lib/assets/*'
 			// an alias ending /* will only match
 			// the contents of a directory, not the directory itself
-			'my-directory/*': 'path/to/my-directory/*'
 		}
 	}
 };
