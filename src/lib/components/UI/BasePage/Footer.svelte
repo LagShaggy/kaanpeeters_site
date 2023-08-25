@@ -10,9 +10,7 @@
 	<div class="flex flex-row justify-around items-start mb-10">
 		<LargeFooterContainer>
 			<Heading>kaanpeeters.ch</Heading>
-			<Heading slot="icon">
-				<img src="/favicon.png" alt="craying ghost" class="h-10 w-auto" />
-			</Heading>
+			<img slot="icon" src="/favicon.png" alt="craying ghost" class="h-20 w-auto mt-4" />
 		</LargeFooterContainer>
 		<FooterColumn>
 			<Subheading>Kaan Peeters</Subheading>
