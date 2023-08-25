@@ -19,7 +19,7 @@
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 {#if isModal}
 	<div
-		class="bg-opacity-25 backdrop-blur bg-gray-300 w-screen h-screen fixed top-0 left-0 right-0 z-50 overflow-scroll"
+		class="bg-opacity-25 backdrop-blur bg-gray-300 w-full h-full fixed top-0 left-0 right-0 z-50 overflow-scroll"
 	>
 		<div class="flex justify-center items-center">
 			<div class="w-full sm:w-4/5 flex flex-col m-2 sm:m-5 gap-1">

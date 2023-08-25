@@ -2,7 +2,7 @@
 	import notes from '$assets/music_notes.svg';
 </script>
 
-<div class="flex flex-col min-h-screen w-screen bg-gradient-to-b from-black to-gray-900">
+<div class="flex flex-col min-h-screen w-full bg-gradient-to-b from-black to-gray-900">
 	<div class="">
 		<slot />
 	</div>

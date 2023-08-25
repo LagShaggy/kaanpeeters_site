@@ -32,7 +32,7 @@
 	<!-- svelte-ignore a11y-no-static-element-interactions -->
 	<div
 		on:click={toggleModal}
-		class="fixed bg-opacity-25 backdrop-blur bg-gray-300 w-screen h-screen top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-10"
+		class="fixed bg-opacity-25 backdrop-blur bg-gray-300 w-full h-full top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-10"
 	>
 		<div class="fixed top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
 			<div class="">

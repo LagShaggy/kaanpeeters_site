@@ -22,7 +22,7 @@
 
 <a
 	href={`${$language}${props.route}`}
-	class="flex items-center w-full hover:bg-gray-800 transition-all relative"
+	class="flex items-center w-full hover:bg-gray-800 transition-all relative p-1"
 	class:pointer-events-none={disable}
 	class:bg-gray-900={current}
 >
@@ -34,7 +34,7 @@
 				</p>
 			</Rainbow>
 		</div>
-		<div class="absolute top-0 sm:top-2 right-2">
+		<div class="absolute right-10 sm:right-24 md:right-0 top-0 md:top-2">
 			<slot class="" name="sticker" />
 		</div>
 	</div>

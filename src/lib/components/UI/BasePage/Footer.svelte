@@ -7,10 +7,12 @@
 </script>
 
 <div>
-	<div class="flex flex-row justify-around items-start mb-10">
+	<div
+		class="flex flex-col md:flex-row justify-center items-center md:justify-around md:items-start mb-10"
+	>
 		<LargeFooterContainer>
 			<Heading>kaanpeeters.ch</Heading>
-			<img slot="icon" src="/favicon.png" alt="craying ghost" class="h-20 w-auto mt-4" />
+			<img slot="icon" src="/favicon.png" alt="craying ghost" class="w-20 aspect-auto mt-4 mx-5" />
 		</LargeFooterContainer>
 		<FooterColumn>
 			<Subheading>Kaan Peeters</Subheading>
