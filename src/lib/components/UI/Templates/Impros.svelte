@@ -16,8 +16,8 @@
 				/>
 			</a>
 		</div>
-		<div class="absolute left-16 -bottom-6">
-			<img src={clickmePic} alt="" class="w-1/3 pointer-events-none animate-tilt" />
+		<div class="absolute left-16 -bottom-6 pointer-events-none">
+			<img src={clickmePic} alt="" class="w-1/3 animate-tilt" />
 		</div>
 	</div>
 	<div class="mt-10 sm:mt-0">
