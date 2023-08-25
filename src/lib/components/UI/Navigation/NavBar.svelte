@@ -1,35 +1,6 @@
 <script lang="ts">
 	import LanguageToggle from '$lib/components/Language/LanguageToggle.svelte';
 	import { language } from '$lib/components/Language/language';
-	import Tab from './Tab.svelte';
-
-	const tabs = [
-		/*
-		{
-			name: 'Home',
-			route: '/'
-		},*/
-		{
-			name: 'Quartet',
-			route: '/quartet'
-		},
-		{
-			name: 'Impros',
-			route: '/impros'
-		},
-		{
-			name: 'Writings',
-			route: '/writings'
-		},
-		{
-			name: 'Gallery',
-			route: '/gallery'
-		},
-		{
-			name: 'Shop',
-			route: '/shop'
-		}
-	];
 </script>
 
 <div class="flex flex-col sm:flex-row w-screen">
@@ -40,12 +11,10 @@
 			</a>
 		</div>
 		<div class="flex flex-col sm:flex-row flex-grow gap-2 sm:gap-0">
-			{#each tabs as props}
-				<Tab {props} />
-			{/each}
+			<slot />
 		</div>
-	</div>
-	<div class="flex w-auto h-auto justify-center items-center">
-		<LanguageToggle />
+		<div class="flex justify-center items-center w-auto h-auto pr-5">
+			<LanguageToggle />
+		</div>
 	</div>
 </div>
