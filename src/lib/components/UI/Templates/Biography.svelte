@@ -10,8 +10,8 @@
 </script>
 
 <div class="flex flex-col sm:flex-row">
-	<div class="aspect-w-2 aspect-h-9 w-fit mr-0 sm:mr-5">
-		<img src={bioPicture} alt="Kaan bio" class="rounded-xl" />
+	<div class="sm:w-1/3 mr-0 sm:mr-5">
+		<img src={bioPicture} alt="Kaan bio" class="rounded-xl aspect-w-2 aspect-h-9" />
 	</div>
 	<div class="w-full">
 		<Subheading>
