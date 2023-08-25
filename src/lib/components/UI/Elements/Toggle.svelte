@@ -14,6 +14,9 @@
 	const offSlider: string = 'ml-5';
 </script>
 
-<button class="flex w-10 h-5 bg-gray-700 rounded-full {on ? '' : offContainer}" on:click={toggle}>
+<button
+	class="flex w-10 h-5 bg-gray-700 rounded-full transition-all {on ? '' : offContainer}"
+	on:click={toggle}
+>
 	<span class="h-5 w-5 rounded-full bg-white transition-all {on ? '' : offSlider}" />
 </button>

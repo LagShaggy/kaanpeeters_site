@@ -14,7 +14,7 @@
 			<slot />
 		</div>
 	</div>
-	<div class="flex justify-center items-center w-auto h-auto pr-5">
+	<div class="flex justify-center items-center pr-5">
 		<LanguageToggle />
 	</div>
 </div>

@@ -35,7 +35,7 @@
 					out:fade={{ duration: 400 }}
 					src={flag}
 					alt="flag"
-					class="h-10 w-auto relative row-span-full col-span-full"
+					class="h-10 w-10 row-span-full col-span-full"
 				/>
 			{/key}
 		</div>
