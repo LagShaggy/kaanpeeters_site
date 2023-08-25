@@ -10,11 +10,9 @@
 </script>
 
 <div class="flex flex-col sm:flex-row">
-	<img
-		src={bioPicture}
-		alt="Kaan bio"
-		class="h-min sm:h-auto sm:w-1/3 mx-0 sm:mx-5 rounded-xl mb-5"
-	/>
+	<div class="sm:w-1/3 mr-0 sm:mr-5">
+		<img src={bioPicture} alt="Kaan bio" class="rounded-xl aspect-w-2 aspect-h-9" />
+	</div>
 	<div class="w-full">
 		<Subheading>
 			{$t['home.kaanpeeters']}<br />
