@@ -14,7 +14,7 @@
 
 <button
 	class="w-80 h-80 flex 2xl:w-[25rem] 2xl:h-[25rem] items-center justify-center border border-gray-950 rounded-3xl transition-all {show
-		? 'w-screen'
+		? 'w-full'
 		: ''}"
 	on:click={toggleShow}
 >

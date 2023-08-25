@@ -11,7 +11,7 @@ on:
     types:
       - merged
 
-run-name: Deploy to Host by @${{ github.actor }}
+run-name: Deploy to Dev-Host by @${{ github.actor }}
 jobs:
   deploy-dev-app:
     runs-on: ubuntu-latest

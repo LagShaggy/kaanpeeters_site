@@ -12,24 +12,17 @@
 
 	let current: boolean = false;
 	$: {
-		let location: string = `${props.route}`;
-		let tabname: string = $page.url.pathname;
-		const resultloc = location.split('/').slice(1).join('/');
-		const resultname = tabname.split('/').slice(2).join('/');
+		const myRoute = props.route.split('/').slice(1).join('/');
+		const currentRoute = $page.url.pathname.split('/').slice(2).join('/');
 
-		if (resultloc == resultname) {
-			console.log(resultloc);
-			current = true;
-		} else {
-			current = false;
-		}
+		current = myRoute == currentRoute;
 	}
 </script>
 
 <a
 	href={`${$language}${props.route}`}
-	class="flex items-center w-full hover:bg-gray-900"
-	class:bg-blue-700={current}
+	class="flex items-center w-full hover:bg-gray-800 transition-all"
+	class:bg-gray-900={current}
 >
 	<div class="flex-grow">
 		<div class="w-auto h-full text-center font-extrabold">

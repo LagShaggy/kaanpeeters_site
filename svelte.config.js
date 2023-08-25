@@ -19,6 +19,11 @@ const config = {
 			precompress: false,
 			strict: true
 		}),
+		prerender: {
+			// use relative URLs similar to an anchor tag <a href="/test/1"></a>
+			// do not include group layout folders in the path such as /(group)/test/1
+			entries: ['/en/impros', '/de/impros', '/en/quartet', '/de/quartet']
+		},
 		alias: {
 			img: 'src/lib/images/*',
 			// an alias ending /* will only match
