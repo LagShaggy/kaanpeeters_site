@@ -13,7 +13,7 @@
 
 <title>{$basePageStore.title}</title>
 <PageShell>
-	<NavBar>
+	<NavBar slot="navbar">
 		<Tab props={{ name: 'Home', route: '/' }} />
 		<Tab props={{ name: 'Quartet', route: '/quartet' }} />
 		<Tab props={{ name: 'Impros', route: '/impros' }} />
