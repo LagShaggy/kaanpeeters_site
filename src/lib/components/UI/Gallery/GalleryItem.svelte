@@ -28,22 +28,18 @@
 </script>
 
 {#if isModal}
-	<!-- svelte-ignore a11y-click-events-have-key-events -->
-	<!-- svelte-ignore a11y-no-static-element-interactions -->
-	<div
+	<button
 		on:click={toggleModal}
 		class="fixed bg-opacity-25 backdrop-blur bg-gray-300 w-full h-full top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-10"
 	>
 		<div class="fixed top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
 			<div class="">
-				<img src={mountain} class="w-full h-auto max-h-screen object-contain" />
+				<img src={mountain} class="w-full h-auto max-h-screen object-contain" alt="somepicture" />
 			</div>
 		</div>
-	</div>
+	</button>
 {/if}
 
-<!-- svelte-ignore a11y-click-events-have-key-events -->
-<!-- svelte-ignore a11y-no-static-element-interactions -->
 <div
 	on:click={toggleModal}
 	class="relative border-2 {colour} w-1/5 flex-grow h-20 sm:w-40 sm:h-40 overflow-hidden rounded-xl"
