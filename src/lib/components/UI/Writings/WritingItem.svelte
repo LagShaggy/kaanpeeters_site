@@ -1,6 +1,8 @@
 <script lang="ts">
 	import type { Writing } from '$lib/types';
+	import { flip } from 'svelte/animate';
 	import Text from '../Elements/Text.svelte';
+	import Poem from './Poem.svelte';
 
 	export let writing: Writing;
 
@@ -23,8 +25,6 @@
 			{writing.name}
 		</Text>
 	{:else}
-		<Text>
-			{writing.text}
-		</Text>
+		<Poem poem={writing.text ?? ''} />
 	{/if}
 </button>
