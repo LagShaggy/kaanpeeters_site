@@ -42,7 +42,7 @@
 
 <div
 	on:click={toggleModal}
-	class="relative border-2 {colour} w-1/5 flex-grow h-20 sm:w-40 sm:h-40 overflow-hidden rounded-xl"
+	class="relative border-2 {colour} w-1/5 flex-grow h-20 sm:w-40 sm:h-40 overflow-hidden rounded-xl transform hover:scale-110 hover:z-10 transition duration-330"
 >
 	<img src={mountain} alt="" class="w-full h-full object-cover" />
 	<span class="absolute bottom-0 left-0 text-white">{text}</span>
