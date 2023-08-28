@@ -4,7 +4,7 @@ export default {
 	theme: {
 		fontFamily: {
 			title: ['"Bricolage Grotesque"', 'sans-serif'],
-			text: [],
+			text: ['Raleway', 'sans-serif'],
 			navBar: ['"Tilt Prism"', 'cursive'],
 			poem: ['"Dancing Script"', 'cursive']
 		}

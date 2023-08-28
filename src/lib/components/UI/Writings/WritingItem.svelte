@@ -24,7 +24,7 @@
 		justify-center border border-gray-950 rounded-3xl transition-all
 		select-text"
 	>
-		<PoemFont className="text-white text-lg">
+		<PoemFont className="text-white text-2xl">
 			{poem.name}
 		</PoemFont>
 	</div>
