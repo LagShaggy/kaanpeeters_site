@@ -9,6 +9,10 @@
 	};
 </script>
 
+<button on:click={toggleModal}>
+	<slot name="view" />
+</button>
+
 {#if isModal}
 	<button
 		on:click={toggleModal}
@@ -27,7 +31,3 @@
 		</div>
 	</button>
 {/if}
-
-<button on:click={toggleModal}>
-	<slot name="view" />
-</button>

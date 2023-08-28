@@ -16,6 +16,6 @@
 		<PoemFont className="text-lg">
 			{@html poem.text}
 		</PoemFont>
-		<button on:click={downloadPdf}> CLICK ME </button>
+		<!-- <button on:click={downloadPdf}> CLICK ME </button> -->
 	</span>
 </div>
