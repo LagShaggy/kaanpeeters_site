@@ -34,7 +34,7 @@
 				</p>
 			</Rainbow>
 		</div>
-		<div class="absolute right-10 sm:right-24 md:right-0 top-0 md:top-2">
+		<div class="absolute right-0 top-0 2xl:top-2 2xl:right-10">
 			<slot class="" name="sticker" />
 		</div>
 	</div>

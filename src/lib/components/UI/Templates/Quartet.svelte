@@ -17,7 +17,7 @@
 		<div class="2xl:w-full">
 			<!-- svelte-ignore a11y-missing-attribute -->
 			<iframe
-				src="https://m.youtube.com/embed/wKDOOWwu1o4"
+				src="https://www.youtube.com/embed/wKDOOWwu1o4"
 				class="w-full h-full aspect-video"
 				frameborder="0"
 				allowfullscreen

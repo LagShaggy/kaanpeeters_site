@@ -18,9 +18,21 @@
 		<Tab props={{ name: 'Quartet', route: '/quartet' }} />
 		<Tab props={{ name: 'Impros', route: '/impros' }} />
 		<Tab props={{ name: 'Writings', route: '/writings' }} />
-		<Tab props={{ name: 'Gallery', route: '/gallery' }} />
+		<Tab props={{ name: 'Gallery', route: '/gallery' }} disable>
+			<img
+				class="h-8 sm:h-10 w-auto rotate-12"
+				slot="sticker"
+				src={comingSoonIcon}
+				alt="comming soon"
+			/>
+		</Tab>
 		<Tab props={{ name: 'Shop', route: '/shop' }} disable>
-			<img class="h-10 w-auto rotate-12" slot="sticker" src={comingSoonIcon} alt="comming soon" />
+			<img
+				class="h-8 sm:h-10 w-auto rotate-12"
+				slot="sticker"
+				src={comingSoonIcon}
+				alt="comming soon"
+			/>
 		</Tab>
 	</NavBar>
 	<div class="flex flex-wrap">
