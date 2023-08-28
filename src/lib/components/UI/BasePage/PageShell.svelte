@@ -4,6 +4,7 @@
 
 <div class="flex flex-col min-h-screen w-full bg-gradient-to-b from-black to-gray-900">
 	<slot name="navbar" />
+
 	<div class="lg:px-52">
 		<slot />
 	</div>

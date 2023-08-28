@@ -9,8 +9,8 @@ export const load: PageLoad = async ({ params }) => {
 		.limit(1)
 		.single();
 
-	const downloadPdf = async () => {
-		await supabase.storage.from('writings').download(data?.pdfid ?? '');
+	const downloadPdf = async (downloadId: string) => {
+		await supabase.storage.from('writings').download(downloadId ?? '');
 	};
 
 	return {

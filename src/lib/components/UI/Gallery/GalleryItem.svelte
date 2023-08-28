@@ -1,5 +1,6 @@
 <script lang="ts">
 	import mountain from '$lib/assets/mountains.jpeg';
+	import ModalWindow from '../Modal/ModalWindow.svelte';
 	const text: string = '';
 
 	let imageUrl: string;
@@ -18,32 +19,9 @@
 		'border-orange-300'
 	];
 	const colour = cols[randCol];
-	let isModal: boolean = false;
-
-	$: isModal;
-
-	const toggleModal = () => {
-		isModal = !isModal;
-	};
 </script>
 
-{#if isModal}
-	<button
-		on:click={toggleModal}
-		class="fixed bg-opacity-25 backdrop-blur bg-gray-300 w-full h-full top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-10"
-	>
-		<div class="fixed top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
-			<div class="">
-				<img src={mountain} class="w-full h-auto max-h-screen object-contain" alt="somepicture" />
-			</div>
-		</div>
-	</button>
-{/if}
-
-<div
-	on:click={toggleModal}
-	class="relative border-2 {colour} w-1/5 flex-grow h-20 sm:w-40 sm:h-40 overflow-hidden rounded-xl"
->
-	<img src={mountain} alt="" class="w-full h-full object-cover" />
-	<span class="absolute bottom-0 left-0 text-white">{text}</span>
-</div>
+<ModalWindow>
+	<img slot="view" src={mountain} alt="" class="w-52 h-52" />
+	<img slot="modal" src={mountain} class="w-full h-full object-cover" alt="somepicture" />
+</ModalWindow>

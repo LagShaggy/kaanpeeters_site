@@ -5,8 +5,8 @@ export default {
 		fontFamily: {
 			title: ['"Bricolage Grotesque"', 'sans-serif'],
 			text: [],
-			navBar: ['Tilt Prism', 'cursive'],
-			poem: []
+			navBar: ['"Tilt Prism"', 'cursive'],
+			poem: ['"Dancing Script"', 'cursive']
 		}
 	},
 	plugins: []

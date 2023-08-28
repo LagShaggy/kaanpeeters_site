@@ -15,4 +15,4 @@
 	const writings = data.writings ?? [];
 </script>
 
-<WritingContainer {writings} />
+<WritingContainer {writings} downloadPdf={data.downloadPdf} />
