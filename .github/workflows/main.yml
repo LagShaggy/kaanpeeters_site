@@ -1,35 +1,44 @@
+name: 🚀 Deploy website on merge
+
+env:
+  METANET_FOLDER_PROD: kaanpeeters.ch/
+
 on:
   push:
-    branches: 
+    branches:
       - main
   pull_request:
     types:
-      - merged  
+      - merged
 
-name: 🚀 Deploy website on push
-run-name: Deploy to ${{ inputs.deploy_target }} by @${{ github.actor }}
+run-name: Deploy to Prod-Host by @${{ github.actor }}
 jobs:
-  build-app:
-    name: 🔨 Build
+  deploy-dev-app:
     runs-on: ubuntu-latest
     steps:
-      - uses:
-      
-  web-deploy:
-     name: 🎉 Deploy via FTP
-     uses: SamKirkland/FTP-Deploy-Action@4.0.0
-      with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: ${{ secrets.FTP_FOLDER }}
-        local-dir: build #
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v3
-    
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: ftp.samkirkland.com
-        username: myFtpUserName
-        password: ${{ secrets.ftp_password }}
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+      #
+      #- name: Install types
+      #  run: npm run supabaseLogin
+      #  run: npm run types
+
+      - name: Build SvelteKit App with Static Adapter
+        run: npm run build
+
+      - name: 🎉 Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.METANET_SERVER }}
+          username: ${{ secrets.METANET_LOGIN }}
+          password: ${{ secrets.METANET_PASSWORD }}
+          server-dir: ${{ env.METANET_FOLDER_PROD }}
+          local-dir: build/
