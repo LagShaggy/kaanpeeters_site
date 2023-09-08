@@ -18,7 +18,7 @@
 	//console.log($page.params.lang);
 </script>
 
-<Text>test2</Text>
+<Text>test3</Text>
 <div class="flex flex-col sm:flex-row flex-wrap">
 	<div class="w-full sm:w-2/3">
 		<Biography />
