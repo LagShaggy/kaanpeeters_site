@@ -2,7 +2,7 @@
 	import EventContainer from '$lib/components/UI/Event/EventContainer.svelte';
 	import Biography from '$lib/components/UI/Templates/Biography.svelte';
 	import { basePageStore } from '$lib/components/UI/BasePage/basePageStore';
-	import type { PageData } from './$types';
+	import type { PageData } from '../$types';
 
 	basePageStore.update((n) => {
 		return {
