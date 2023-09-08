@@ -1,7 +1,7 @@
 import './app.css';
 
 export const ssr = false;
-
+/*
 export function load() {
 	//console.log(location.pathname);
 	if (location.pathname === '/') {
@@ -13,4 +13,4 @@ export function load() {
 	if (location.pathname === '/en') {
 		location.replace('/en/home');
 	}
-}
+}*/
