@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { returnRandColors } from './randcolor';
+	import { returnRandGreyColors } from './randcolor';
 
-	const colors: string[] = returnRandColors(); //gives array of 7 colors in random order
+	const colors: string[] = returnRandGreyColors();
 </script>
 
 <div

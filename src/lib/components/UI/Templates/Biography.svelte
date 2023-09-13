@@ -10,7 +10,7 @@
 </script>
 
 <div class="flex flex-col sm:flex-row">
-	<div class="sm:w-1/3 mr-0 sm:mr-5">
+	<div class="sm:w-2/3 mr-0 sm:mr-5">
 		<img src={bioPicture} alt="Kaan bio" class="rounded-xl aspect-w-2 aspect-h-9" />
 	</div>
 	<div class="w-full">
