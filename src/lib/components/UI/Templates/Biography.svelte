@@ -13,7 +13,7 @@
 	<div class="sm:w-2/3 mr-0 sm:mr-5">
 		<img src={bioPicture} alt="Kaan bio" class="rounded-xl aspect-w-2 aspect-h-9" />
 	</div>
-	<div class="w-full">
+	<div class="w-full mr-0 sm:mr-5">
 		<Subheading>
 			{$t['home.kaanpeeters']}<br />
 			{$t['home.slogan']}<br /><br />
