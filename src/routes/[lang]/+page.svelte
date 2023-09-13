@@ -2,8 +2,7 @@
 	import EventContainer from '$lib/components/UI/Event/EventContainer.svelte';
 	import Biography from '$lib/components/UI/Templates/Biography.svelte';
 	import { basePageStore } from '$lib/components/UI/BasePage/basePageStore';
-	import type { PageData } from '../$types';
-	import Text from '$lib/components/UI/Elements/Text.svelte';
+	import type { PageData } from './$types';
 
 	basePageStore.update((n) => {
 		return {
@@ -18,7 +17,6 @@
 	//console.log($page.params.lang);
 </script>
 
-<Text>test3</Text>
 <div class="flex flex-col sm:flex-row flex-wrap">
 	<div class="w-full sm:w-2/3">
 		<Biography />
