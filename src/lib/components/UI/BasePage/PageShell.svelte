@@ -9,7 +9,7 @@
 		<slot />
 	</div>
 
-	<div class="mt-auto pt-5 bg-gray-900">
+	<div class="mt-auto pt-5 bg-black">
 		<slot name="footer" />
 	</div>
 </div>
