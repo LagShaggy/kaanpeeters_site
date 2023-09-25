@@ -24,12 +24,12 @@
 		<div class="flex justify-center items-center">
 			<div class="w-full sm:w-4/5 flex flex-col m-2 sm:m-5 gap-1">
 				<div class="flex flex-row">
-					<div class="bg-green-600 rounded-xl">
+					<div class="bg-gray-600 rounded-lg">
 						<div class="text-left font-bold mx-2">This is a list of all events</div>
 					</div>
 					<div
 						on:click={toggleModal}
-						class="flex flex-row ml-auto text-right font-semibold bg-red-500 rounded-xl cursor-pointer hover:underline"
+						class="flex flex-row ml-auto text-right font-semibold bg-red-500 rounded-lg cursor-pointer hover:underline"
 					>
 						<div class="text-left font-bold mx-2">Close all events</div>
 						<div class=" flex justify-center items-center">
@@ -50,13 +50,13 @@
 {:else}
 	<div class="flex flex-col overflow-auto gap-1">
 		<div class="flex flex-row gap-2">
-			<div class="bg-green-600 rounded-xl">
+			<div class="bg-gray-600 rounded-lg">
 				<div class="text-left font-bold mx-2">Find me on these events:</div>
 			</div>
 
 			<div
 				on:click={toggleModal}
-				class="flex flex-row ml-auto text-right font-semibold bg-green-600 rounded-xl cursor-pointer hover:underline"
+				class="flex flex-row ml-auto text-right font-semibold bg-gray-600 rounded-lg cursor-pointer hover:underline"
 			>
 				<div class="text-left font-bold mx-2">Show all events</div>
 				<div class=" flex justify-center items-center">
@@ -65,7 +65,7 @@
 			</div>
 		</div>
 		{#each events.sort((a, b) => new Date(a.date) - new Date(b.date)) as event, index (event.id)}
-			{#if new Date(event.date) > new Date()}
+			{#if new Date(event.date) >= new Date()}
 				<EventItem {event} priority />
 			{/if}
 		{/each}

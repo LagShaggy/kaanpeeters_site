@@ -6,7 +6,8 @@ export default {
 			title: ['"Bricolage Grotesque"', 'sans-serif'],
 			text: ['Raleway', 'sans-serif'],
 			navBar: ['"Tilt Prism"', 'cursive'],
-			poem: ['"Dancing Script"', 'cursive']
+			//poem: ['"Dancing Script"', 'cursive']
+			poem: ['Raleway', 'sans-serif']
 		}
 	},
 	plugins: []

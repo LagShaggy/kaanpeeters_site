@@ -3,7 +3,7 @@
 	import { fade } from 'svelte/transition';
 </script>
 
-<p class="font-text text-gray-500 font-bold text-lg grid">
+<p class="font-text text-white font-bold text-lg grid">
 	{#key $t}
 		<div transition:fade={{ duration: 400 }} class="row-span-full col-span-full">
 			<slot />

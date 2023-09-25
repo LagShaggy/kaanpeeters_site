@@ -6,7 +6,7 @@
 	export let downloadPdf: () => {};
 </script>
 
-<div class="bg-cover text-black" style="background-image: url({scrollBackground});">
+<div class="bg-gray-950 text-white">
 	<div class="mx-2 sm:m-10">
 		<br /> <br />
 		<PoemFont className="text-xl font-semibold">

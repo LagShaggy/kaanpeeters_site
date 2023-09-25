@@ -23,7 +23,9 @@
 		<div on:click|stopPropagation class="flex justify-center items-center">
 			<div class="relative w-full sm:w-3/5">
 				<button class="absolute right-2 top-2 sm:top-12" on:click={toggleModal}>
-					<img src={x_icon} alt="" />
+					<div class="bg-white rounded-xl">
+						<img src={x_icon} alt="" />
+					</div>
 				</button>
 				<slot name="modal" />
 			</div>
