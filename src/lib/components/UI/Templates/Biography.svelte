@@ -26,7 +26,6 @@
 	</div>
 	<div class="w-full mr-0 sm:mr-5">
 		<Subheading>
-			{$t['home.kaanpeeters']}<br /><br />
 			<PopText {isVisible} /><br />
 		</Subheading>
 		<Text>

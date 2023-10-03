@@ -3,11 +3,12 @@
 	import Biography from '$lib/components/UI/Templates/Biography.svelte';
 	import { basePageStore } from '$lib/components/UI/BasePage/basePageStore';
 	import type { PageData } from './$types';
+	import { t } from '$lib/components/Language/language';
 
 	basePageStore.update((n) => {
 		return {
 			...n,
-			subtitle: 'Home'
+			subtitle: $t['home.kaanpeeters']
 		};
 	});
 
