@@ -26,7 +26,7 @@
 				><Text><div class="hover:underline">Instagram</div></Text></a
 			>
 			<a href="https://www.youtube.com/@kaanpeeters/featured" target="_blank"
-				><Text><div class="hover:underline">You Tube</div></Text></a
+				><Text><div class="hover:underline">YouTube</div></Text></a
 			>
 			<a href="https://bandcamp.com/kaanpeeters" target="_blank"
 				><Text><div class="hover:underline">Bandcamp</div></Text></a
