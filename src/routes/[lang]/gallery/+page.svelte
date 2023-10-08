@@ -2,6 +2,7 @@
 	import GalleryContainer from '$lib/components/UI/Gallery/GalleryContainer.svelte';
 
 	import { basePageStore } from '$lib/components/UI/BasePage/basePageStore';
+	import type { PageData } from './$types';
 
 	basePageStore.update((n) => {
 		return {
@@ -9,6 +10,10 @@
 			subtitle: 'Gallery'
 		};
 	});
+
+	export let data: PageData;
+	const imageLinks = data.imageLink ?? [];
+	//console.log(imageLinks);
 </script>
 
-<GalleryContainer />
+<GalleryContainer {imageLinks} />

@@ -7,17 +7,10 @@
 	import Text from '../Elements/Text.svelte';
 
 	import { t } from '$lib/components/Language/language';
-	import PopText from '../Elements/PopText.svelte';
 
 	import { onMount } from 'svelte';
 
 	let isVisible = false;
-
-	onMount(() => {
-		setTimeout(() => {
-			isVisible = true;
-		}, 1500); // Set a delay of 1500ms (1.5 second)
-	});
 </script>
 
 <div class="flex flex-col sm:flex-row">
@@ -25,23 +18,26 @@
 		<img src={bioPicture} alt="Kaan bio" class="rounded-xl aspect-w-2 aspect-h-9" />
 	</div>
 	<div class="w-full mr-0 sm:mr-5">
-		<Subheading>
-			{$t['home.kaanpeeters']}<br /><br />
-			<PopText {isVisible} /><br />
-		</Subheading>
+		<div class="mb-5">
+			<Subheading>
+				<p class="text-2xl">
+					{@html $t['home.slogan']}
+				</p>
+			</Subheading>
+		</div>
 		<Text>
 			{$t['home.text']}
 		</Text>
 
 		<div class="flex flex-row gap-2 m-2 justify-evenly">
 			<a href="https://www.instagram.com/kaanpeeters/" target="_blank">
-				<img src={instagramPic} alt="My Instagram page" class="h-20" />
+				<img src={instagramPic} alt="My Instagram page" class="h-14" />
 			</a>
 			<a href="https://www.youtube.com/@kaanpeeters/featured" target="_blank">
-				<img src={youtubePic} alt="My You Tube page" class="h-20" />
+				<img src={youtubePic} alt="My You Tube page" class="h-14" />
 			</a>
 			<a href="https://bandcamp.com/kaanpeeters" target="_blank">
-				<img src={bandcampPic} alt="My Bandcamp page" class="h-20" />
+				<img src={bandcampPic} alt="My Bandcamp page" class="h-14" />
 			</a>
 		</div>
 	</div>

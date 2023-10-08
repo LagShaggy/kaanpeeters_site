@@ -1,5 +1,5 @@
 {
-	"home.slogan": "Ich kreiere <br />Momente, <br />Musik, <br />Texte",
+	"home.slogan": "Ich kreiere <br />Momente, <br />Musik, <br />Text",
 	"home.kaanpeeters": "Kaan Peeters",
 	"home.text": "Kaan Peeters, wohnhaft in Zürich, ist am 23. Mai 1996 in Bad Zurzach, Schweiz, geboren. Er studierte Jazzklavier bei Chris Wiesendanger und David Virelles an der Zürcher Hochschule der Künste und schloss den Master of Arts in Pädagogik 2023 ab. Von Tobias Willi wurde er während dem Studium auf der Orgel unterrichtet. Als Gründer und Leiter des 'Kaan Peeters Quartett', sowie der Organisation IMPROS, und des daraus folgenden 'IMPROS Festival', arbeitet er heute als Pianist, Organist, Komponist, Autor, Veranstalter und Lehrer.",
 	"quartet.main": "Das 'Kaan Peeters Quartett' spendet seit 2018 musikalischen Trost und Hoffnung Jazz. Hip-Hop. Spiritual. Zeitgeist. Kaan Peeters. Benjamin Kissola Gonçalves. Sara El Hachimi. Martin Maron.",
@@ -11,5 +11,9 @@
 	"quartet.martin.name": "Martin Maron",
 	"quartet.martin.text": "Martin Maron (*1994) spielt seit seinem achten Lebensjahr Schlagzeug und absolvierte sein Studium an der Zürcher Hochschule der Künste. Nebst seiner Tätigkeit als Schlagzeuglehrer wirkt er in verschiedensten Formationen mit, z.B. Der Swiss Armed Forces Big Band, und dem Kaan Peeters Quartett.",
 	"impros.text": "IMPROS feiert die Improvisation. und steht für die Vereinigung aller Spiritualität ein - Kunst als unser Brot, das wir gemeinsam brechen und teilen.",
-	"language.text": "Deutsch"
+	"language.text": "Deutsch",
+	"events.text1": "Nächste Events",
+	"events.text2": "Alle Events anzeigen",
+	"events.text3": "Schließen",
+	"events.text4": "Vergangene Events anzeigen"
 }

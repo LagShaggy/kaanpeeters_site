@@ -21,6 +21,18 @@
 			<Text>Text</Text>
 		</FooterColumn>
 		<FooterColumn>
+			<Subheading>Social</Subheading>
+			<a href="https://www.instagram.com/kaanpeeters/" target="_blank"
+				><Text><div class="hover:underline">Instagram</div></Text></a
+			>
+			<a href="https://www.youtube.com/@kaanpeeters/featured" target="_blank"
+				><Text><div class="hover:underline">You Tube</div></Text></a
+			>
+			<a href="https://bandcamp.com/kaanpeeters" target="_blank"
+				><Text><div class="hover:underline">Bandcamp</div></Text></a
+			>
+		</FooterColumn>
+		<FooterColumn>
 			<Subheading>Impressum</Subheading>
 			<Text>Made by Svord</Text>
 		</FooterColumn>
