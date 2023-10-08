@@ -34,13 +34,13 @@
 
 		<div class="flex flex-row gap-2 m-2 justify-evenly">
 			<a href="https://www.instagram.com/kaanpeeters/" target="_blank">
-				<img src={instagramPic} alt="My Instagram page" class="h-20" />
+				<img src={instagramPic} alt="My Instagram page" class="h-14" />
 			</a>
 			<a href="https://www.youtube.com/@kaanpeeters/featured" target="_blank">
-				<img src={youtubePic} alt="My You Tube page" class="h-20" />
+				<img src={youtubePic} alt="My You Tube page" class="h-14" />
 			</a>
 			<a href="https://bandcamp.com/kaanpeeters" target="_blank">
-				<img src={bandcampPic} alt="My Bandcamp page" class="h-20" />
+				<img src={bandcampPic} alt="My Bandcamp page" class="h-14" />
 			</a>
 		</div>
 	</div>
