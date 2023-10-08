@@ -1,6 +1,7 @@
 <script lang="ts">
 	import mountain from '$lib/assets/mountains.jpeg';
 	import ModalWindow from '../Modal/ModalWindow.svelte';
+	export let imageLink;
 	const text: string = '';
 
 	let imageUrl: string;
@@ -22,6 +23,6 @@
 </script>
 
 <ModalWindow>
-	<img slot="view" src={mountain} alt="" class="w-52 h-52" />
-	<img slot="modal" src={mountain} class="w-full h-full object-cover" alt="somepicture" />
+	<img slot="view" src={imageLink} alt="" class="w-52 h-52" />
+	<img slot="modal" src={imageLink} class="w-full h-full object-cover" alt="somepicture" />
 </ModalWindow>
