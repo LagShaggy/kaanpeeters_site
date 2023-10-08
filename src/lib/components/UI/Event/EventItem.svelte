@@ -19,11 +19,7 @@
 	//console.log(datetime);
 </script>
 
-<div
-	class="flex flex-col rounded-lg bg-opacity-70"
-	class:bg-gray-400={priority}
-	class:bg-red-500={!priority}
->
+<div class="flex flex-col rounded-lg" class:bg-white={priority} class:bg-red-300={!priority}>
 	<div class="flex flex-row mx-2 mt-1 border-b border-gray-500 border-opacity-50">
 		<div class="text-left font-bold">
 			<Text>
