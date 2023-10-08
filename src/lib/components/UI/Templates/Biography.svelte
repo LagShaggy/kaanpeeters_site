@@ -7,17 +7,10 @@
 	import Text from '../Elements/Text.svelte';
 
 	import { t } from '$lib/components/Language/language';
-	import PopText from '../Elements/PopText.svelte';
 
 	import { onMount } from 'svelte';
 
 	let isVisible = false;
-
-	onMount(() => {
-		setTimeout(() => {
-			isVisible = true;
-		}, 1500); // Set a delay of 1500ms (1.5 second)
-	});
 </script>
 
 <div class="flex flex-col sm:flex-row">
@@ -25,9 +18,13 @@
 		<img src={bioPicture} alt="Kaan bio" class="rounded-xl aspect-w-2 aspect-h-9" />
 	</div>
 	<div class="w-full mr-0 sm:mr-5">
-		<Subheading>
-			<PopText {isVisible} /><br />
-		</Subheading>
+		<div class="mb-5">
+			<Subheading>
+				<p class="text-2xl">
+					{@html $t['home.slogan']}
+				</p>
+			</Subheading>
+		</div>
 		<Text>
 			{$t['home.text']}
 		</Text>
