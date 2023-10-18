@@ -22,14 +22,17 @@
 		</FooterColumn>
 		<FooterColumn>
 			<Subheading>Social</Subheading>
-			<a href="https://www.instagram.com/kaanpeeters/" target="_blank"
-				><Text><div class="hover:underline">Instagram</div></Text></a
-			>
-			<a href="https://www.youtube.com/@kaanpeeters/featured" target="_blank"
-				><Text><div class="hover:underline">YouTube</div></Text></a
-			>
-			<a href="https://bandcamp.com/kaanpeeters" target="_blank"
-				><Text><div class="hover:underline">Bandcamp</div></Text></a
+			<a href="https://www.instagram.com/kaanpeeters/" target="_blank">
+				<Text><div class="hover:underline">Instagram</div></Text>
+			</a>
+			<a href="https://www.youtube.com/@kaanpeeters/featured" target="_blank">
+				<Text><div class="hover:underline">YouTube</div></Text>
+			</a>
+			<a href="https://bandcamp.com/kaanpeeters" target="_blank">
+				<Text><div class="hover:underline">Bandcamp</div></Text>
+			</a>
+			<a href="mailto:kaan.peeters@gmail.com">
+				<Text><div class="hover:underline">Email</div></Text></a
 			>
 		</FooterColumn>
 		<FooterColumn>
