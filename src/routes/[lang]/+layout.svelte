@@ -12,12 +12,13 @@
 </script>
 
 <title>{$basePageStore.title}</title>
-<PageShell size="full">
+<PageShell>
 	<NavBar slot="navbar">
 		<Tab props={{ name: 'Home', route: '/' }} />
 		<Tab props={{ name: 'Quartet', route: '/quartet' }} />
 		<Tab props={{ name: 'Impros', route: '/impros' }} />
 		<Tab props={{ name: 'Writings', route: '/writings' }} />
+		<Tab props={{ name: 'Shop', route: '/shop' }} />
 		<Tab props={{ name: 'Gallery', route: '/gallery' }} disable>
 			<img
 				class="h-8 sm:h-10 w-auto rotate-12"
@@ -26,20 +27,14 @@
 				alt="comming soon"
 			/>
 		</Tab>
-		<Tab props={{ name: 'Shop', route: '/shop' }} disable>
-			<img
-				class="h-8 sm:h-10 w-auto rotate-12"
-				slot="sticker"
-				src={comingSoonIcon}
-				alt="comming soon"
-			/>
-		</Tab>
 	</NavBar>
+
 	<div class="flex flex-wrap">
 		<Heading>{$basePageStore.subtitle}</Heading>
 		<div class="m-5">
 			<slot />
 		</div>
 	</div>
+
 	<Footer slot="footer" />
 </PageShell>

@@ -32,8 +32,8 @@
 				<Text><div class="hover:underline">Bandcamp</div></Text>
 			</a>
 			<a href="mailto:kaan.peeters@gmail.com">
-				<Text><div class="hover:underline">Email</div></Text></a
-			>
+				<Text><div class="hover:underline">Email</div></Text>
+			</a>
 		</FooterColumn>
 		<FooterColumn>
 			<Subheading>Impressum</Subheading>
