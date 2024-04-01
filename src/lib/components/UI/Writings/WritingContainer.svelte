@@ -5,7 +5,6 @@
 
 	export let writings: Writing[];
 	export let downloadPdf: (s: string) => {};
-	console.log(writings);
 </script>
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 content-around">

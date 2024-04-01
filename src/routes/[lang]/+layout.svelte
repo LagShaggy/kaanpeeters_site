@@ -29,7 +29,7 @@
 		</Tab>
 	</NavBar>
 
-	<div class="flex flex-wrap">
+	<div class="flex flex-col flex-wrap">
 		<Heading>{$basePageStore.subtitle}</Heading>
 		<div class="m-5">
 			<slot />

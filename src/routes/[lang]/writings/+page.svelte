@@ -11,7 +11,6 @@
 	});
 
 	export let data: PageData;
-
 	const writings = data.writings ?? [];
 </script>
 
