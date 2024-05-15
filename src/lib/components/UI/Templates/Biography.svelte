@@ -19,11 +19,11 @@
 	</div>
 	<div class="w-full mr-0 sm:mr-5">
 		<div class="mb-5">
-			<Subheading>
+			<!-- <Subheading>
 				<p class="text-2xl">
 					{@html $t['home.slogan']}
 				</p>
-			</Subheading>
+			</Subheading> -->
 		</div>
 		<Text>
 			{$t['home.text']}
